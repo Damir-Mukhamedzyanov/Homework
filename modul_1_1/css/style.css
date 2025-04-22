@@ -1,0 +1,31 @@
+p {
+    margin: 0;
+}
+
+.first_block {
+    background-color: rgb(64, 57, 57);
+
+    .red {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+
+    p {
+        color: white;
+
+        span {
+            color: rgb(153, 79, 222);
+        }
+    }
+}
+
+.second_block {
+    background-color: rgb(143, 127, 125);
+    width: 300px;
+
+    span {
+        background-color: rgb(114, 69, 159);
+        color: white;
+    }
+}
