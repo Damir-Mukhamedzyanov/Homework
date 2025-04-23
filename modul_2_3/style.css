@@ -1,0 +1,27 @@
+header {
+    height: 60px;
+    background-color: rgb(221, 128, 61);
+
+    a {
+        color: black;
+    }
+}
+
+img {
+    width: 300px;
+    margin: 20px 0;
+}
+
+.quote {
+    background-color: #f0d999;
+}
+
+.violet {
+    height: 300px;
+    background-color: blueviolet;
+    color: white;
+
+    a {
+        color: white;
+    }
+}
