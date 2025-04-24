@@ -17,11 +17,10 @@
 
 .four {
     word-spacing: 30px;
-    text-decoration: overline;
-    text-decoration-style: wavy;
+    text-decoration: overline wavy;
 }
 
 .five {
     letter-spacing: 5px;
-    text-decoration: underline;
+    text-decoration: underline double;
 }
