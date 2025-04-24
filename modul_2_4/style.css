@@ -7,7 +7,7 @@
 }
 
 .two {
-    text-decoration: line-through;
+    text-decoration: line-through red;
 }
 
 .three {
@@ -17,10 +17,10 @@
 
 .four {
     word-spacing: 30px;
-    text-decoration: overline wavy;
+    text-decoration: overline wavy green;
 }
 
 .five {
     letter-spacing: 5px;
-    text-decoration: underline double;
+    text-decoration: underline double blue;
 }
