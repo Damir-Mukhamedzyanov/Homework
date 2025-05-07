@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(31, 30, 30);
+}
+
+.h1 {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 20px;
+    color: antiquewhite;
+    position: relative;
+}
+
+.h1::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    border: 5px antiquewhite solid;
+    border-radius: 100%;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.h1::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    border: 5px antiquewhite solid;
+    border-radius: 100%;
+    position: absolute;
+    left: 61%;
+    top: 50%;
+    transform: translateY(-50%);
+}
