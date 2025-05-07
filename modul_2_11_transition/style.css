@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(79, 79, 79);
+    margin: 0 auto;
+    margin-top: 270px;
+    text-align: center;
+    position: relative;
+    color: rgb(79, 79, 79);
+
+    span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 27px;
+
+    }
+
+}
+
+div:hover {
+    color: aliceblue;
+    transition: all 1s 2s;
+    transition-timing-function: ease-in;
+}
+
+div::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 30px;
+    background-color: rgb(213, 210, 205);
+    position: absolute;
+    left: -200px;
+    top: -100px;
+}
+
+div:hover::before {
+    width: 600px;
+    transition: all 2s;
+}
