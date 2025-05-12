@@ -1,7 +1,7 @@
 let obj = {
-    name: Damir,
+    name: 'Damir',
     age: 18,
-    country: Russia,
+    country: 'Russia',
     sayHello(n) {
         return `Hello ${n}`
     }
@@ -35,3 +35,11 @@ let users = [
         isAdmin: true
     },
 ]
+
+let ollAdmins = 0;
+
+users.forEach(item => { if (item.isAdmin) { ollAdmins++ } });
+
+console.log(ollAdmins);
+
+
