@@ -13,4 +13,19 @@
             document.body.classList.remove('body--opened-menu')
         }
     })
+    // ==============================================================
+
+    const modal = document.querySelector('.modal'),
+        modalOpenedBtn = document.querySelector('.about__img-button');
+
+    modalOpenedBtn.addEventListener('click', (e) => {
+        document.body.classList.toggle('body--modal-opened');
+    })
+
+    modal.addEventListener('click', (e) => {
+        e.preventDefault()
+        if (e.target.classList.contains('modal') || e.target.closest('.modal__cancel')) {
+            document.body.classList.remove('body--modal-opened');
+        }
+    })
 })()
