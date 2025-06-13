@@ -19,6 +19,7 @@
         modalOpenedBtn = document.querySelector('.about__img-button');
 
     modalOpenedBtn.addEventListener('click', (e) => {
+        e.preventDefault()
         document.body.classList.toggle('body--modal-opened');
     })
 
