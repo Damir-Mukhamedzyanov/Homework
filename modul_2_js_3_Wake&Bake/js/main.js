@@ -30,6 +30,10 @@
             document.body.classList.remove('body--modal-opened');
         }
     })
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
     // =================================================================
 
     const tabControls = document.querySelector('.tabs-controls');
