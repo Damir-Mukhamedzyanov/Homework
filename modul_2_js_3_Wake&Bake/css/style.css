@@ -5,9 +5,6 @@
 @import "hero.css";
 
 
-@import "footer.css";
-
-@import "media.css";
 
 /* ================================================================*/
 
@@ -381,3 +378,11 @@
         color: #ff9138;
     }
 }
+
+
+
+
+
+    
+@import "footer.css";
+@import "media.css";
