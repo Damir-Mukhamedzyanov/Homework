@@ -1,0 +1,54 @@
+.header {
+    background: url('../img/bg/up_bg.png') 50% 100% / cover no-repeat;
+}
+
+.header__top {
+    padding-top: 19px;
+}
+
+.header__logo {
+    max-width: 174px;
+    z-index: 11;
+
+    img {
+        width: 100%;
+    }
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nav__list {
+    display: flex;
+    gap: 4vh 40px;
+}
+
+.nav__link {
+    display: block;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.nav__link::before {
+    content: '';
+    display: block;
+    height: 34px;
+    width: 34px;
+    border-radius: 100%;
+    background: var(--accent-color);
+    position: absolute;
+    top: -8px;
+    left: -13px;
+    z-index: -1;
+
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.nav__link:hover::before {
+    opacity: 1;
+}
