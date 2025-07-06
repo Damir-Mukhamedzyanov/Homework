@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wake & Bake</title>
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
 </head>
@@ -35,7 +36,7 @@
                             </ul>
                         </nav>
 
-                        
+
                         <a class="burger-icon" href="#">
                             <span></span>
                         </a>
@@ -54,7 +55,7 @@
                             <p class="hero__text">За 8 практических занятий ты получишь новые возможности для
                                 самореализации и любимое дело</p>
                             <div class="hero__img-controll hero__img-controll--mobile">
-                                <a class="hero__img-button" data-fslightbox href="video/cake.mp4">
+                                <a class="hero__img-button" data-fslightbox="video" href="video/cake.mp4">
                                     <img src="icons/video_icon.svg" alt="">
                                 </a>
                                 Посмотри, как готовятся наши торты
@@ -683,6 +684,94 @@
                 </div>
             </section>
 
+            <section class="main__gallery gallery">
+                <div class="container">
+                    <div class="gallery__inner">
+                        <div class="gallery__img">
+                            <img src="img/studens/cupcakes_photo_gallery.png" alt="">
+                        </div>
+                        <div class="gallery__content">
+                            <div class="gallery__info">
+                                <h2 class="gallery__title title">Фотогалерея</h2>
+                                <p class="gallery__text">Для комфортного обучения сделаны просторные аудитории,
+                                    где предоставляется всё необходимое оборудование. Здесь наши
+                                    ученики создают кулинарные шедевры под присмотром опытных наставников</p>
+                            </div>
+                            <div class="gallery__nav">
+                                <button class="gallery__prev" type="button">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.992 1.03414L2.016 7.01014L7.992 12.9861L6.984 13.9941L0 7.01014L6.984 0.0261401L7.992 1.03414Z"
+                                            fill="#FFA55C" />
+                                        <path d="M1.00781 7.69727V6.25727L13.2478 6.25727V7.69727L1.00781 7.69727Z"
+                                            fill="#FFA55C" />
+                                    </svg>
+
+                                </button>
+                                <div class="gallery__pagination"></div>
+                                <button class="gallery__next" type="button">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                            fill="#FFA55C" />
+                                        <path
+                                            d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                            fill="#FFA55C" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery__slider swiper">
+                        <div class="gallery__wrapper swiper-wrapper">
+                            <a class="gallery__slide swiper-slide" href="img/photo_gallery/photo_gallery_people_1.jpg"
+                                data-fslightbox="gallery">
+                                <img src="img/photo_gallery/photo_gallery_people_1.jpg" alt="women">
+                            </a>
+                            <a class="gallery__slide swiper-slide" href="img/photo_gallery/photo_gallery_people_2.jpg"
+                                data-fslightbox="gallery">
+                                <img src="img/photo_gallery/photo_gallery_people_2.jpg" alt="women">
+                            </a>
+                            <a class="gallery__slide swiper-slide" href="img/photo_gallery/photo_gallery_people_1.jpg"
+                                data-fslightbox="gallery">
+                                <img src="img/photo_gallery/photo_gallery_people_1.jpg" alt="women">
+                            </a>
+                            <a class="gallery__slide swiper-slide" href="img/photo_gallery/photo_gallery_people_4.jpg"
+                                data-fslightbox="gallery">
+                                <img src="img/photo_gallery/photo_gallery_people_4.jpg" alt="women">
+                            </a>
+                            <a class="gallery__slide swiper-slide" href="img/photo_gallery/photo_gallery_people_1.jpg"
+                                data-fslightbox="gallery">
+                                <img src="img/photo_gallery/photo_gallery_people_1.jpg" alt="women">
+                            </a>
+                            <a class="gallery__slide swiper-slide" href="img/photo_gallery/photo_gallery_people_1.jpg"
+                                data-fslightbox="gallery">
+                                <img src="img/photo_gallery/photo_gallery_people_1.jpg" alt="women">
+                            </a>
+                            <a class="gallery__slide swiper-slide" href="img/photo_gallery/photo_gallery_people_2.jpg"
+                                data-fslightbox="gallery">
+                                <img src="img/photo_gallery/photo_gallery_people_2.jpg" alt="women">
+                            </a>
+                            <a class="gallery__slide swiper-slide" href="img/photo_gallery/photo_gallery_people_1.jpg"
+                                data-fslightbox="gallery">
+                                <img src="img/photo_gallery/photo_gallery_people_1.jpg" alt="women">
+                            </a>
+                            <a class="gallery__slide swiper-slide" href="img/photo_gallery/photo_gallery_people_4.jpg"
+                                data-fslightbox="gallery">
+                                <img src="img/photo_gallery/photo_gallery_people_4.jpg" alt="women">
+                            </a>
+                            <a class="gallery__slide swiper-slide" href="img/photo_gallery/photo_gallery_people_1.jpg"
+                                data-fslightbox="gallery">
+                                <img src="img/photo_gallery/photo_gallery_people_1.jpg" alt="women">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main>
 
@@ -783,6 +872,7 @@
     </div>
 
     <script src="js/fslightbox.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
