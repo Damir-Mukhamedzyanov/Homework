@@ -3,7 +3,11 @@
 @import "global.css";
 @import "header.css";
 @import "hero.css";
+<<<<<<< HEAD
 @import "footer.css";
+=======
+
+>>>>>>> origin/main
 
 
 /* ================================================================*/
@@ -379,6 +383,7 @@
     }
 }
 
+<<<<<<< HEAD
 /* ========================= */
 
 .main__gallery {
@@ -842,3 +847,12 @@
         }
     }
 }
+=======
+
+
+
+
+    
+@import "footer.css";
+@import "media.css";
+>>>>>>> origin/main
