@@ -3,6 +3,11 @@
 @import "global.css";
 @import "header.css";
 @import "hero.css";
+<<<<<<< HEAD
+=======
+@import "footer.css";
+
+>>>>>>> origin/main
 /* ================================================================*/
 
 .main__about {
@@ -376,6 +381,11 @@
     }
 }
 
+<<<<<<< HEAD
+=======
+/* =============== */
+
+>>>>>>> origin/main
 .main__gallery {
     padding-bottom: 140px;
 }
