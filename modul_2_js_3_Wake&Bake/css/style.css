@@ -3,11 +3,8 @@
 @import "global.css";
 @import "header.css";
 @import "hero.css";
-<<<<<<< HEAD
-=======
 @import "footer.css";
 
->>>>>>> origin/main
 /* ================================================================*/
 
 .main__about {
@@ -381,11 +378,8 @@
     }
 }
 
-<<<<<<< HEAD
-=======
 /* =============== */
 
->>>>>>> origin/main
 .main__gallery {
     padding-bottom: 140px;
 }
@@ -512,8 +506,6 @@
     margin-bottom: 140px;
 }
 
-.testimonials {}
-
 .testimonials__inner {
     display: flex;
     justify-content: space-between;
@@ -528,8 +520,6 @@
 .testimonials__title {
     margin-bottom: 20px;
 }
-
-.testimonials__text {}
 
 .testimonials__prev,
 .testimonials__next {
@@ -679,6 +669,116 @@
     background: var(--accent-color);
 }
 
+/* =================================== */
+
+.contact {
+    background: url('../img/bg/down_bg.png') 50% 0 / cover no-repeat;
+    padding: 140px 0;
+}
+
+.contact__inner {
+    display: flex;
+    align-items: end;
+    gap: 84px;
+    position: relative;
+}
+
+.contact__img {
+
+    img {
+        width: 100%;
+        filter: drop-shadow(0 4px 30px 0 #c6b0a14d);
+    }
+}
+
+.contact__inner::before {
+    content: url(../img/studens/currant_1.png);
+    position: absolute;
+    left: 0;
+    top: -5%;
+}
+
+.contact__inner::after {
+    content: url(../img/studens/currant_2.png);
+    position: absolute;
+    top: 8%;
+    right: 1%;
+}
+
+.contact__body {
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__title {
+    margin-bottom: 20px;
+}
+
+.contact__text {
+    margin-bottom: 40px;
+}
+
+.contact__label {
+    margin-bottom: 20px;
+
+    a {
+        text-decoration: underline;
+        cursor: pointer;
+        transition: var(--transition);
+    }
+
+    a:hover {
+        color: var(--accent-color);
+    }
+}
+
+.contact__label:first-child {
+    margin-bottom: 10px;
+}
+
+.contact__check-label {
+    display: flex;
+    gap: 5px;
+    align-items: start;
+    max-width: 288px;
+    font-size: 13px;
+}
+
+.contact__chekbox {
+    appearance: none;
+    margin-top: 1.5px;
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition);
+
+    border: 1.5px solid #ac907a;
+    border-radius: 4px;
+    width: 16px;
+    height: 16px;
+}
+
+.contact__chekbox::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("../icons/check_mark.svg") 50% 50% no-repeat;
+    opacity: 0;
+}
+
+.contact__chekbox:hover {
+    border: 1.5px solid var(--accent-color);
+}
+
+.contact__chekbox:checked {
+    border: 1.5px solid var(--accent-color);
+    background: var(--accent-color);
+}
+
+.contact__chekbox:checked::before {
+    opacity: 1;
+}
 
 
 /* ========================== */
@@ -800,6 +900,10 @@
     .tabs-controls {
         flex-wrap: wrap;
     }
+
+    .contact__inner::after {
+        top: -20%;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -817,6 +921,11 @@
 
     .accordion-list__control-title {
         font-size: 35px;
+    }
+
+    .contact__inner {
+        align-items: center;
+        gap: 30px;
     }
 }
 
@@ -909,6 +1018,14 @@
         margin: 0 auto;
     }
 
+    .contact__inner {
+        justify-content: center;
+    }
+
+    .contact__img {
+        display: none;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -977,6 +1094,10 @@
     .testimonials__nav {
         align-self: end;
     }
+
+    .contact__inner::before {
+        display: none;
+    }
 }
 
 @media (max-width:600px) {
@@ -985,8 +1106,13 @@
         padding: 60px 0 80px;
     }
 
-    .main__gallery {
+    .main__gallery,
+    .main__testimonials {
         padding: 0 0 80px;
+    }
+
+    .contact {
+        padding-bottom: 80px;
     }
 
     /* --------------- */
@@ -1019,7 +1145,9 @@
 
     /* ------------------ */
 
-    .program__title {
+    .program__title,
+    .contact__title,
+    .contact__text {
         text-align: center;
     }
 
@@ -1087,6 +1215,10 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .main__testimonials {
+        margin-bottom: 0;
     }
 }
 

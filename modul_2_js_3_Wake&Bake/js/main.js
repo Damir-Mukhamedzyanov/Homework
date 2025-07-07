@@ -149,4 +149,11 @@
         }
     });
 
+    // Инпуты телефоны
+
+    const telInputs = document.querySelectorAll('input[type="tel"]'),
+        im = new Inputmask("+7 (999) 999-99-99");
+
+    im.mask(telInputs)
+
 })()
