@@ -3,13 +3,6 @@
 @import "global.css";
 @import "header.css";
 @import "hero.css";
-<<<<<<< HEAD
-@import "footer.css";
-=======
-
->>>>>>> origin/main
-
-
 /* ================================================================*/
 
 .main__about {
@@ -383,15 +376,9 @@
     }
 }
 
-<<<<<<< HEAD
-/* ========================= */
-
 .main__gallery {
     padding-bottom: 140px;
 }
-
-.gallery {}
-
 
 .gallery__inner {
     display: grid;
@@ -509,9 +496,267 @@
     }
 }
 
+/* =========================== */
+
+.main__testimonials {
+    margin-bottom: 140px;
+}
+
+.testimonials {}
+
+.testimonials__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 40px;
+}
+
+.testimonials__info {
+    max-width: 632px;
+}
+
+.testimonials__title {
+    margin-bottom: 20px;
+}
+
+.testimonials__text {}
+
+.testimonials__prev,
+.testimonials__next {
+    cursor: pointer;
+    background: transparent;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1.50px solid var(--accent-color);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.testimonials__prev:hover,
+.testimonials__next:hover {
+    background: var(--accent-color);
+}
+
+.testimonials__prev path,
+.testimonials__next path {
+    transition: var(--transition);
+}
+
+.testimonials__prev:hover path,
+.testimonials__next:hover path {
+    fill: #fff9f4;
+}
+
+.swiper-button-disabled.testimonials__next,
+.swiper-button-disabled.testimonials__prev {
+    border: 1.50px solid #e1d9e1;
+
+    path {
+        fill: #e1d9e1;
+    }
+}
+
+.swiper-button-disabled.testimonials__next:hover,
+.swiper-button-disabled.testimonials__prev:hover {
+    border: 1.50px solid #e1d9e1;
+    background: transparent;
+    cursor: auto;
+
+    path {
+        fill: #e1d9e1;
+    }
+}
+
+.testimonials__nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.testimonials__slider {
+    overflow: visible;
+}
+
+.testimonials__wrapper {
+    margin-bottom: 42px;
+}
+
+.testimonials__slide {
+    border-radius: var(--border-radius);
+    background: var(--accent-bg);
+    padding: 30px 30px 40px;
+    display: flex;
+    gap: 30px;
+    transition: var(--transition);
+    height: auto;
+}
+
+.testimonials__slide.swiper-slide {
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+.swiper-slide-active.testimonials__slide {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.swiper-slide-prev.testimonials__slide,
+.swiper-slide-next.testimonials__slide {
+    opacity: 0.5;
+}
+
+.testimonials__student {
+    max-width: 165px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.testimonials__student-img {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.testimonials__student-name {
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: var(--accent-text);
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.testimonials__student-inst {
+    color: #ceaad0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+
+}
+
+.testimonials__quote {
+    span {
+        display: block;
+        font-size: 32px;
+        line-height: 0.9;
+        color: var(--accent-text);
+        font-family: 'Gabriola';
+        margin-bottom: 10px;
+    }
+}
+
+
+.testimonials__scrollbar {
+    background: var(--accent-bg);
+}
+
+.testimonials__scrollbar.swiper-scrollbar {
+    position: static;
+    width: 100%;
+}
+
+.testimonials__scrollbar .swiper-scrollbar-drag {
+    background: var(--accent-color);
+}
+
+
 
 /* ========================== */
+.footer {
+    display: block;
+    width: 100%;
+    background: #ab8261;
+    padding: 60px 10px;
+    color: var(--general--bg-color);
+}
 
+.footer__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px 15px;
+}
+
+.footer__col:first-child {
+    margin-top: -30px;
+
+    .footer__social {
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+        line-height: 0;
+
+        path {
+            transition: var(--transition);
+        }
+
+        a:hover path {
+            fill: var(--accent-color);
+        }
+    }
+}
+
+.footer__col:nth-child(2) {
+
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: -5px;
+    }
+
+    .footer__link {
+        padding: 5px 0;
+    }
+}
+
+.footer__col:nth-child(3) {
+    .footer__schedule:first-child {
+        margin-bottom: 10px;
+    }
+
+    img {
+        margin-right: 8px;
+    }
+}
+
+.footer__col:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    .footer__tell {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        margin-bottom: 47px;
+        transition: var(--transition);
+    }
+
+    .footer__tell:hover {
+        color: var(--accent-color);
+    }
+
+
+
+    .footer__rights {
+        color: #dec5b1;
+        display: flex;
+        gap: 5px;
+    }
+}
+
+/* ===================== */
 
 
 @media (max-width: 1200px) {
@@ -649,6 +894,11 @@
         max-width: none;
     }
 
+    .testimonials__scrollbar.swiper-scrollbar {
+        width: 50%;
+        margin: 0 auto;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -707,6 +957,15 @@
 
     .accordion-content__text {
         max-width: none;
+    }
+
+    .testimonials__inner {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .testimonials__nav {
+        align-self: end;
     }
 }
 
@@ -809,6 +1068,16 @@
     .gallery__inner {
         margin-bottom: 20px;
     }
+
+    .testimonials__inner {
+        margin-bottom: 20px;
+    }
+
+    .testimonials__slide {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 @media (max-width: 450px) {
@@ -846,13 +1115,8 @@
 
         }
     }
+
+    .testimonials__slide {
+        padding: 30px 10px;
+    }
 }
-=======
-
-
-
-
-    
-@import "footer.css";
-@import "media.css";
->>>>>>> origin/main
