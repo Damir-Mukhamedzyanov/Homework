@@ -3,12 +3,13 @@
 @import "global.css";
 @import "header.css";
 @import "hero.css";
-<<<<<<< HEAD
-@import "footer.css";
 
-=======
->>>>>>> origin/main
 /* ================================================================*/
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
 
 .main__about {
     padding: 140px 0;
@@ -196,6 +197,7 @@
     transition: var(--transition);
     gap: 15px;
     text-align: left;
+    cursor: pointer;
 }
 
 .accordion-list__control-icon {
@@ -1052,6 +1054,10 @@
     }
 
     /* ------------------------------- */
+
+    html {
+        scroll-padding-top: 50px;
+    }
 
     .about__inner {
         grid-template: none;
